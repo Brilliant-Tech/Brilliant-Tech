@@ -1,0 +1,59 @@
+}
+.wrapper{
+position: absolute;
+top: 15%;
+left: 30%;
+transform: translate(-50%,-50%);
+}
+.cube-wrap {
+width: 80px;
+height: 80px;
+perspective: 2000px;
+perspective-origin: 50% -500px;
+}
+.single-box {
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj);
+background-size: cover;
+display: block;
+position: absolute;
+width: 72px;
+height: 72px;
+background-color: #60c2ef;
+transform: rotateY(45deg) translateZ(-200px) rotateX(15deg);
+transform-origin: 50% 50% 0;
+border: 3px solid #fff;
+}
+.box {
+transform-style: preserve-3d;
+animation: rotate 10s infinite linear;
+}
+.side-front { 
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj);
+transform: translateZ(36px);
+}
+.side-back { 
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj);
+transform: rotateY(180deg) translateZ(36px);
+}
+.side-top {
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj);
+transform: rotateX(90deg) translateZ(36px);
+}
+.side-bottom { 
+transform: rotateX(-90deg) translateZ(36px); 
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj);
+}
+.side-left { 
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj);
+transform: rotateY(-90deg) translateZ(36px); 
+}
+.side-right {
+background-image: url(https://yt3.ggpht.com/yti/ANoDKi7H5VOsT2h2t74xNt9gE97zAE57OZfo37pQ6MZK=s108-c-k-c0x00ffffff-no-rj); 
+transform: rotateY(90deg) translateZ(36px); 
+}
+ 
+@keyframes rotate {
+0% { transform: rotateY(0); }
+     
+100% { transform: rotateY(360deg); }
+}
